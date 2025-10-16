@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahmad Khalil — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div class="logo"><a href="#home"><span>Ahmad</span>Khalil</a></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Light and Dark mode button -->
+      <div class="actions">
+        <button class="theme-toggle" id="darkModeToggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger" aria-label="menu" title="Menu">
+          <span class="line"></span><span class="line"></span><span class="line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="greeting reveal">Hello, my name is</div>
+          <h1 class="hero-title reveal">Ahmad <span>Khalil</span></h1>
+          <div class="subtitle reveal">
+            I'm a <span class="typewriter" id="typewriter"></span>
+          </div>
+
+          <p class="desc reveal">
+            I build modern, responsive websites and interactive web apps. I'm a Computer Science student at
+            Saylani Mass IT Training Centre — passionate about frontend development, UI/UX and clean code.
+          </p>
+
+          <div class="hero-cta reveal" style="margin-top:14px">
+            <a class="btn btn-primary" id="hireBtn" href="#contact"><i class="fa-solid fa-paper-plane"></i>Hire Me</a>
+            <a class="btn btn-outline" id="viewWorkBtn" href="#portfolio"><i class="fa-solid fa-images"></i>View Work</a>
+          </div>
+        </div>
+
+        <div class="profile-card reveal" id="profileCard">
+          <div class="photo-wrap" id="photoWrap">
+            <!-- Put your photo named myphoto.jpg in same folder -->
+            <img src="myphoto.jpg" alt="Ahmad Khalil">
+          </div>
+
+          <div class="profile-tech" aria-hidden="true">
+            <div class="icon" title="HTML"><i class="fab fa-html5"></i></div>
+            <div class="icon" title="CSS"><i class="fab fa-css3-alt"></i></div>
+            <div class="icon" title="JS"><i class="fab fa-js"></i></div>
+            <div class="icon" title="React"><i class="fab fa-react"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">A quick intro</p>
+        <div class="about-card reveal">
+          <p style="color:var(--muted);max-width:980px">
+            Hello! I'm <strong>Ahmad Khalil</strong>, a passionate web developer and designer from Pakistan.
+            I specialize in building responsive and accessible websites using HTML, CSS, JavaScript, and modern tools.
+            I enjoy turning ideas into user-friendly digital experiences and continuously learning new techniques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (separate) -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-sub">What I work with</p>
+        <div class="skills-grid reveal">
+          <div class="skill-card">
+            <h4>Frontend</h4>
+            <p>HTML, CSS, Bootstrap</p>
+            <div class="skill-bar"><i data-width="90%">
+    <span class="percent">90%</span>
+  </i></div>
+          </div>
+          <div class="skill-card">
+            <h4>JavaScript</h4>
+            <p>Vanilla JS, DOM, Fetch API</p>
+            <div class="skill-bar"><i data-width="85%">
+    <span class="percent">85%</span>
+  </i></div>
+          </div>
+          <div class="skill-card">
+            <h4>Frameworks & Tools</h4>
+            <p>React (learning), Git, Figma</p>
+            <div class="skill-bar"><i data-width="60%">
+    <span class="percent">60% leraning</span>
+  </i></div>
+          </div>
+          <div class="skill-card">
+            <h4>UI / UX</h4>
+            <p>Figma, Prototyping, Accessibility</p>
+            <div class="skill-bar"><i data-width="80%">
+    <span class="percent">80%</span>
+  </i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-sub">How I can help you</p>
+        <div class="service-grid reveal">
+          <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h4>Web Development</h4>
+            <p style="color:var(--muted)">Responsive websites with clean code and performance focus.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Responsive Design</h4>
+            <p style="color:var(--muted)">Designs that work great on every device.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-paint-brush"></i>
+            <h4>UI / UX</h4>
+            <p style="color:var(--muted)">Polished, user-first interfaces from Figma to front-end.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+  <div class="container">
+    <h2 class="section-title">My Work</h2>
+    <p class="section-sub">Selected Projects</p>
+
+    <div class="portfolio-grid">
+      
+      <a href="https://ahmadkhalil2131.github.io/e-commerce/" target="_blank" class="portfolio-item">
+        <img src="loginpage.jpg" alt="E-commerce Website">
+        <div class="portfolio-overlay">
+          <h3>E-commerce Website <p><span>LogIn Page</span></p></h3>
+          <p>HTML, CSS</p>
+        </div>
+      </a>
+
+      <a href="https://ahmadkhalil2131.github.io/LiveWeather-WEB/" target="_blank" class="portfolio-item">
+        <img src="weatherweb.jpg" alt="Live Weather Web">
+        <div class="portfolio-overlay">
+          <h3>Live Weather Web</h3>
+          <p>HTML, CSS, JavaScript, API</p>
+        </div>
+      </a>
+
+      <a href="https://ahmadkhalil2131.github.io/Figma_WebMainPage/" target="_blank" class="portfolio-item">
+        <img src="webmainpage.jpg" alt="Figma Web Main Page">
+        <div class="portfolio-overlay">
+          <h3>Figma Web Main Page</h3>
+          <p>HTML, CSS</p>
+        </div>
+      </a>
+
+      <a href="https://ahmadkhalil2131.github.io/Daraz_mainpageClone/" target="_blank" class="portfolio-item">
+        <img src="darazpage.jpg" alt="Daraz Mainpage Clone">
+        <div class="portfolio-overlay">
+          <h3>Daraz Mainpage Clone</h3>
+          <p>HTML, CSS</p>
+        </div>
+      </a>
+
+      <a href="https://ahmadkhalil2131.github.io/Guess_game/" target="_blank" class="portfolio-item">
+        <img src="WhatsApp Image 2025-08-14 at 01.38.17_842ea40f.jpg" alt="Guess Game">
+        <div class="portfolio-overlay">
+          <h3>Guess Game</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Let’s build something great</p>
+
+        <div class="contact-grid reveal" style="margin-top:16px">
+          <div class="contact-card">
+            <h3 style="margin-bottom:8px">Get in touch</h3>
+            <p style="color:var(--muted)">Email: <strong>ahmadkhalilnsr@gmail.com</strong></p>
+            <p style="color:var(--muted)">WhatsApp: <strong>03250078771</strong></p>
+
+            <div class="socials" style="margin-top:14px">
+              <!-- Replace href values with your own links -->
+              <a href="https://www.linkedin.com/in/ahmad-khalil00/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://web.facebook.com/ahmad.khalil.158601" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://wa.me/923250078771" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://github.com/AhmadKhalil2131" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+        <!-- Contact Form -->
+<!-- Contact Form -->
+<form id="contactForm" class="contact-card" autocomplete="on">
+
+  <input type="hidden" name="_subject" value="New message from your portfolio">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <label for="name">Your Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+  <label for="email">Your Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" placeholder="What’s this about?">
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+  <button type="submit" class="btn btn-primary">
+    <i class="fa-solid fa-paper-plane"></i> Send Message
+  </button>
+
+</form>
+
+<div id="form-status" style="margin-top:10px; font-weight:bold;"></div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let form = e.target;
+    let formData = new FormData(form);
+
+    fetch('https://formsubmit.co/ahmadkhalilnsr@gmail.com', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById('form-status').style.color = "green";
+            document.getElementById('form-status').innerText = "✅ Message sent successfully!";
+            form.reset();
+        } else {
+            throw new Error('Form submission failed.');
+        }
+    })
+    .catch(error => {
+        document.getElementById('form-status').style.color = "red";
+        document.getElementById('form-status').innerText = "❌ Failed to send message. Please try again.";
+    });
+});
+</script>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Thanks anchor for _next -->
+    <div id="thanks" class="container" style="padding:18px 0 2px;color:var(--muted);text-align:center"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Ahmad Khalil • Built with ❤️</p>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></div>
+</body>
+<script src="app.js"></script>
+
+</html>
